@@ -3,10 +3,10 @@ import csv
 from datetime import datetime
 import os
 
-# Database connection parameters
+#NOTA: Cambiar los valores de las variables de conexión según corresponda a su configuración de base de datos. 
 DB_NAME = "tgcpokemon_db"
 DB_USER = "postgres"
-DB_PASSWORD = "Fer.hermar27"
+DB_PASSWORD = "12345678" 
 DB_HOST = "localhost"  
 DB_PORT = "5432"    
 
