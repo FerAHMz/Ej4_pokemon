@@ -1,5 +1,5 @@
 CREATE TABLE cartas (
-    id SERIAL PRIMARY KEY,
+    id varchar(50) PRIMARY KEY,
     name VARCHAR(255),
     pokedex_number INTEGER,
     supertype VARCHAR(255),
@@ -20,9 +20,8 @@ CREATE TABLE cartas (
 
 CREATE TABLE precios (
     id SERIAL PRIMARY KEY,
-    carta_id INTEGER REFERENCES cartas(id),
+    carta_id VARCHAR(50) REFERENCES cartas(id),
     precio DECIMAL,
     tipo_precio VARCHAR(50),
     fecha DATE
 );
-
